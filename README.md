@@ -1,10 +1,10 @@
 # VHcc_light
-############# A light framework for VHcc analysis. #############
+############# A light framework for VHcc analysis #############
 
 The framework is composed of following scripts and designed to run the scripts in this order.
 
         A. 1_doBSubmit.py
-                This script is for submitting LSF jobs to creat flat ntuple. It will excute Zllhcc.py
+                This script is for submitting LSF jobs to create flat ntuple. It will excute Zllhcc.py
 
         B. 2_doBSubmit_reSubmit.py
                 Once the submitted jobs finish, you can check if the jobs were properly completed and there were some errors.
