@@ -1,0 +1,197 @@
+Sender: LSF System <lsfadmin@b68ccbf003.cern.ch>
+Subject: Job 201541808: </afs/cern.ch/work/j/jblee/private/Hcc/CMSSW_10_2_0_pre5/src/VHcc/2L/BSub_logs/ZllHcc/v10/WZ_TuneCUETP8M1_13TeV-pythia8/job_arizzi-RunIIMoriond17-DeepAndR80_1.sh> in cluster <batch> Exited
+
+Job </afs/cern.ch/work/j/jblee/private/Hcc/CMSSW_10_2_0_pre5/src/VHcc/2L/BSub_logs/ZllHcc/v10/WZ_TuneCUETP8M1_13TeV-pythia8/job_arizzi-RunIIMoriond17-DeepAndR80_1.sh> was submitted from host <lxplus082.cern.ch> by user <jblee> in cluster <batch>.
+Job was executed on host(s) <b68ccbf003.cern.ch>, in queue <8nh>, as user <jblee> in cluster <batch>.
+</afs/cern.ch/user/j/jblee> was used as the home directory.
+</afs/cern.ch/work/j/jblee/private/Hcc/CMSSW_10_2_0_pre5/src/VHcc/2L> was used as the working directory.
+Started at Wed Oct  3 17:33:00 2018
+Results reported on Wed Oct  3 17:36:08 2018
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/afs/cern.ch/work/j/jblee/private/Hcc/CMSSW_10_2_0_pre5/src/VHcc/2L/BSub_logs/ZllHcc/v10/WZ_TuneCUETP8M1_13TeV-pythia8/job_arizzi-RunIIMoriond17-DeepAndR80_1.sh
+------------------------------------------------------------
+
+Exited with exit code 255.
+
+Resource usage summary:
+
+    CPU time :                                   13.38 sec.
+    Max Memory :                                 440.37 MB
+    Average Memory :                             217.13 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1233 MB
+    Max Processes :                              13
+    Max Threads :                                20
+    Run time :                                   185 sec.
+    Turnaround time :                            2307 sec.
+
+The output (if any) follows:
+
+@(#)CERN job starter $Date: 2010/06/23 14:22:16 $
+Working directory is </pool/lsf/jblee/201541808> on <b68ccbf003.cern.ch>
+
+SysError in <TFile::TFile>: file /eos/cms/store/user/jblee/Hcc/v10/WZ_TuneCUETP8M1_13TeV-pythia8/tree_arizzi-RunIIMoriond17-DeepAndR80_1.root can not be opened (No such file or directory)
+
+ *** Break *** segmentation violation
+start_time :  Wed Oct  3 17:33:39 2018
+processing on :  /store/user/lmastrol/VHcc_2016V4_Aug18/WZ_TuneCUETP8M1_13TeV-pythia8/arizzi-RunIIMoriond17-DeepAndR80/180903_091604/0000/tree_1.root
+Number of events processed :  0
+
+
+
+===========================================================
+There was a crash.
+This is the entire stack trace of all threads:
+===========================================================
+
+Thread 7 (Thread 0x2af9eb9ec700 (LWP 18850)):
+#0  0x00002af9dca89499 in syscall () from /lib64/libc.so.6
+#1  0x00002af9eae1618f in XrdSys::LinuxSemaphore::Wait (this=0x32aca00) at /build/cmsbld/auto-builds/CMSSW_10_2_0_pre4-slc6_amd64_gcc630/build/CMSSW_10_2_0_pre4-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.8.3/xrootd-4.8.3/src/./XrdSys/XrdSysLinuxSemaphore.hh:161
+#2  XrdCl::SyncQueue<XrdCl::JobManager::JobHelper>::Get (this=0x2e3d9c8) at /build/cmsbld/auto-builds/CMSSW_10_2_0_pre4-slc6_amd64_gcc630/build/CMSSW_10_2_0_pre4-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.8.3/xrootd-4.8.3/src/./XrdCl/XrdClSyncQueue.hh:67
+#3  XrdCl::JobManager::RunJobs (this=0x2e3d9b0) at /build/cmsbld/auto-builds/CMSSW_10_2_0_pre4-slc6_amd64_gcc630/build/CMSSW_10_2_0_pre4-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.8.3/xrootd-4.8.3/src/XrdCl/XrdClJobManager.cc:146
+#4  0x00002af9eae16349 in RunRunnerThread (arg=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_10_2_0_pre4-slc6_amd64_gcc630/build/CMSSW_10_2_0_pre4-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.8.3/xrootd-4.8.3/src/XrdCl/XrdClJobManager.cc:33
+#5  0x00002af9dc102aa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00002af9dca8cc4d in clone () from /lib64/libc.so.6
+
+Thread 6 (Thread 0x2af9eb7eb700 (LWP 18849)):
+#0  0x00002af9dca89499 in syscall () from /lib64/libc.so.6
+#1  0x00002af9eae1618f in XrdSys::LinuxSemaphore::Wait (this=0x32aca00) at /build/cmsbld/auto-builds/CMSSW_10_2_0_pre4-slc6_amd64_gcc630/build/CMSSW_10_2_0_pre4-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.8.3/xrootd-4.8.3/src/./XrdSys/XrdSysLinuxSemaphore.hh:161
+#2  XrdCl::SyncQueue<XrdCl::JobManager::JobHelper>::Get (this=0x2e3d9c8) at /build/cmsbld/auto-builds/CMSSW_10_2_0_pre4-slc6_amd64_gcc630/build/CMSSW_10_2_0_pre4-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.8.3/xrootd-4.8.3/src/./XrdCl/XrdClSyncQueue.hh:67
+#3  XrdCl::JobManager::RunJobs (this=0x2e3d9b0) at /build/cmsbld/auto-builds/CMSSW_10_2_0_pre4-slc6_amd64_gcc630/build/CMSSW_10_2_0_pre4-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.8.3/xrootd-4.8.3/src/XrdCl/XrdClJobManager.cc:146
+#4  0x00002af9eae16349 in RunRunnerThread (arg=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_10_2_0_pre4-slc6_amd64_gcc630/build/CMSSW_10_2_0_pre4-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.8.3/xrootd-4.8.3/src/XrdCl/XrdClJobManager.cc:33
+#5  0x00002af9dc102aa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00002af9dca8cc4d in clone () from /lib64/libc.so.6
+
+Thread 5 (Thread 0x2af9eb5ea700 (LWP 18848)):
+#0  0x00002af9dca89499 in syscall () from /lib64/libc.so.6
+#1  0x00002af9eae1618f in XrdSys::LinuxSemaphore::Wait (this=0x32aca00) at /build/cmsbld/auto-builds/CMSSW_10_2_0_pre4-slc6_amd64_gcc630/build/CMSSW_10_2_0_pre4-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.8.3/xrootd-4.8.3/src/./XrdSys/XrdSysLinuxSemaphore.hh:161
+#2  XrdCl::SyncQueue<XrdCl::JobManager::JobHelper>::Get (this=0x2e3d9c8) at /build/cmsbld/auto-builds/CMSSW_10_2_0_pre4-slc6_amd64_gcc630/build/CMSSW_10_2_0_pre4-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.8.3/xrootd-4.8.3/src/./XrdCl/XrdClSyncQueue.hh:67
+#3  XrdCl::JobManager::RunJobs (this=0x2e3d9b0) at /build/cmsbld/auto-builds/CMSSW_10_2_0_pre4-slc6_amd64_gcc630/build/CMSSW_10_2_0_pre4-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.8.3/xrootd-4.8.3/src/XrdCl/XrdClJobManager.cc:146
+#4  0x00002af9eae16349 in RunRunnerThread (arg=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_10_2_0_pre4-slc6_amd64_gcc630/build/CMSSW_10_2_0_pre4-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.8.3/xrootd-4.8.3/src/XrdCl/XrdClJobManager.cc:33
+#5  0x00002af9dc102aa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00002af9dca8cc4d in clone () from /lib64/libc.so.6
+
+Thread 4 (Thread 0x2af9eb3e9700 (LWP 18847)):
+#0  0x00002af9dc10a00d in nanosleep () from /lib64/libpthread.so.0
+#1  0x00002af9eac44ef3 in XrdSysTimer::Wait (mills=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_10_2_0_pre4-slc6_amd64_gcc630/build/CMSSW_10_2_0_pre4-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.8.3/xrootd-4.8.3/src/XrdSys/XrdSysTimer.cc:239
+#2  0x00002af9eadb8e97 in XrdCl::TaskManager::RunTasks (this=0x32873f0) at /build/cmsbld/auto-builds/CMSSW_10_2_0_pre4-slc6_amd64_gcc630/build/CMSSW_10_2_0_pre4-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.8.3/xrootd-4.8.3/src/XrdCl/XrdClTaskManager.cc:244
+#3  0x00002af9eadb8fe9 in RunRunnerThread (arg=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_10_2_0_pre4-slc6_amd64_gcc630/build/CMSSW_10_2_0_pre4-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.8.3/xrootd-4.8.3/src/XrdCl/XrdClTaskManager.cc:37
+#4  0x00002af9dc102aa1 in start_thread () from /lib64/libpthread.so.0
+#5  0x00002af9dca8cc4d in clone () from /lib64/libc.so.6
+
+Thread 3 (Thread 0x2af9eb1e8700 (LWP 18846)):
+#0  0x00002af9dca8d243 in epoll_wait () from /lib64/libc.so.6
+#1  0x00002af9eac49fc4 in XrdSys::IOEvents::PollE::Begin (this=0x2a81430, syncsem=<optimized out>, retcode=<optimized out>, eTxt=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_10_2_0_pre4-slc6_amd64_gcc630/build/CMSSW_10_2_0_pre4-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.8.3/xrootd-4.8.3/src/./XrdSys/XrdSysIOEventsPollE.icc:213
+#2  0x00002af9eac46625 in XrdSys::IOEvents::BootStrap::Start (parg=0x7fff510e7a70) at /build/cmsbld/auto-builds/CMSSW_10_2_0_pre4-slc6_amd64_gcc630/build/CMSSW_10_2_0_pre4-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.8.3/xrootd-4.8.3/src/XrdSys/XrdSysIOEvents.cc:131
+#3  0x00002af9eac44718 in XrdSysThread_Xeq (myargs=0x327b2b0) at /build/cmsbld/auto-builds/CMSSW_10_2_0_pre4-slc6_amd64_gcc630/build/CMSSW_10_2_0_pre4-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.8.3/xrootd-4.8.3/src/XrdSys/XrdSysPthread.cc:86
+#4  0x00002af9dc102aa1 in start_thread () from /lib64/libpthread.so.0
+#5  0x00002af9dca8cc4d in clone () from /lib64/libc.so.6
+
+Thread 2 (Thread 0x2af9eabd7700 (LWP 18832)):
+#0  0x00002af9dc108a00 in sem_wait () from /lib64/libpthread.so.0
+#1  0x00002af9dc016118 in PyThread_acquire_lock (lock=lock
+entry=0x5f0170, waitflag=waitflag
+entry=1) at Python/thread_pthread.h:324
+#2  0x00002af9dbfd2f26 in PyEval_RestoreThread (tstate=tstate
+entry=0x2c474e0) at Python/ceval.c:359
+#3  0x00002af9ea9d20d8 in floatsleep (secs=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_10_1_0-slc6_amd64_gcc630/build/CMSSW_10_1_0-build/BUILD/slc6_amd64_gcc630/external/python/2.7.11-omkpbe2/python-2.7.11/Modules/timemodule.c:959
+#4  time_sleep (self=<optimized out>, args=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_10_1_0-slc6_amd64_gcc630/build/CMSSW_10_1_0-build/BUILD/slc6_amd64_gcc630/external/python/2.7.11-omkpbe2/python-2.7.11/Modules/timemodule.c:206
+#5  0x00002af9dbfdcb96 in call_function (oparg=<optimized out>, pp_stack=0x2af9eabd64d0) at Python/ceval.c:4350
+#6  PyEval_EvalFrameEx (f=f
+entry=0x2af9ea99b7d0, throwflag=throwflag
+entry=0) at Python/ceval.c:2987
+#7  0x00002af9dbfdd9bc in PyEval_EvalCodeEx (co=<optimized out>, globals=<optimized out>, locals=locals
+entry=0x0, args=args
+entry=0x2af9dd02dba8, argcount=1, kws=kws
+entry=0x2af9dcd3a068, kwcount=0, defs=0x0, defcount=0, closure=0x0) at Python/ceval.c:3582
+#8  0x00002af9dbf543cd in function_call (func=0x2af9dd01bcf8, arg=0x2af9dd02db90, kw=0x2af9dcfef7f8) at Objects/funcobject.c:526
+#9  0x00002af9dbf23953 in PyObject_Call (func=func
+entry=0x2af9dd01bcf8, arg=arg
+entry=0x2af9dd02db90, kw=kw
+entry=0x2af9dcfef7f8) at Objects/abstract.c:2546
+#10 0x00002af9dbfd7f4c in ext_do_call (nk=<optimized out>, na=0, flags=<optimized out>, pp_stack=0x2af9eabd6778, func=0x2af9dd01bcf8) at Python/ceval.c:4663
+#11 PyEval_EvalFrameEx (f=f
+entry=0x2af9dd021938, throwflag=throwflag
+entry=0) at Python/ceval.c:3026
+#12 0x00002af9dbfdac72 in fast_function (nk=0, na=<optimized out>, n=<optimized out>, pp_stack=0x2af9eabd68b0, func=<optimized out>) at Python/ceval.c:4436
+#13 call_function (oparg=<optimized out>, pp_stack=0x2af9eabd68b0) at Python/ceval.c:4371
+#14 PyEval_EvalFrameEx (f=f
+entry=0x2af9ec000910, throwflag=throwflag
+entry=0) at Python/ceval.c:2987
+#15 0x00002af9dbfdac72 in fast_function (nk=0, na=<optimized out>, n=<optimized out>, pp_stack=0x2af9eabd69f0, func=<optimized out>) at Python/ceval.c:4436
+#16 call_function (oparg=<optimized out>, pp_stack=0x2af9eabd69f0) at Python/ceval.c:4371
+#17 PyEval_EvalFrameEx (f=f
+entry=0x2af9dce75c90, throwflag=throwflag
+entry=0) at Python/ceval.c:2987
+#18 0x00002af9dbfdd9bc in PyEval_EvalCodeEx (co=<optimized out>, globals=<optimized out>, locals=locals
+entry=0x0, args=args
+entry=0x2af9dd02db68, argcount=1, kws=kws
+entry=0x0, kwcount=0, defs=0x0, defcount=0, closure=0x0) at Python/ceval.c:3582
+#19 0x00002af9dbf542fc in function_call (func=0x2af9ea991050, arg=0x2af9dd02db50, kw=0x0) at Objects/funcobject.c:526
+#20 0x00002af9dbf23953 in PyObject_Call (func=func
+entry=0x2af9ea991050, arg=arg
+entry=0x2af9dd02db50, kw=kw
+entry=0x0) at Objects/abstract.c:2546
+#21 0x00002af9dbf34b8c in instancemethod_call (func=0x2af9ea991050, arg=0x2af9dd02db50, kw=0x0) at Objects/classobject.c:2602
+#22 0x00002af9dbf23953 in PyObject_Call (func=func
+entry=0x2af9dd075c30, arg=arg
+entry=0x2af9dcd3a050, kw=<optimized out>) at Objects/abstract.c:2546
+#23 0x00002af9dbfd3607 in PyEval_CallObjectWithKeywords (func=0x2af9dd075c30, arg=0x2af9dcd3a050, kw=<optimized out>) at Python/ceval.c:4219
+#24 0x00002af9dc01c032 in t_bootstrap (boot_raw=0x2c47140) at ./Modules/threadmodule.c:620
+#25 0x00002af9dc102aa1 in start_thread () from /lib64/libpthread.so.0
+#26 0x00002af9dca8cc4d in clone () from /lib64/libc.so.6
+
+Thread 1 (Thread 0x2af9dcd38e20 (LWP 18716)):
+#0  0x00002af9dca508dd in waitpid () from /lib64/libc.so.6
+#1  0x00002af9dc9e24e9 in do_system () from /lib64/libc.so.6
+#2  0x00002af9dc9e2820 in system () from /lib64/libc.so.6
+#3  0x00002af9ddb5ebe8 in TUnixSystem::StackTrace() () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_2_0_pre5/external/slc6_amd64_gcc630/lib/libCore.so
+#4  0x00002af9ddb610ec in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_2_0_pre5/external/slc6_amd64_gcc630/lib/libCore.so
+#5  <signal handler called>
+#6  0x00002af9dd5c093a in TBufferFile::TagStreamerInfo(TVirtualStreamerInfo*) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_2_0_pre5/external/slc6_amd64_gcc630/lib/libRIO.so
+#7  0x00002af9dd761f8e in int TStreamerInfo::WriteBufferAux<char**>(TBuffer&, char** const&, TStreamerInfo::TCompInfo* const*, int, int, int, int, int) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_2_0_pre5/external/slc6_amd64_gcc630/lib/libRIO.so
+#8  0x00002af9dd64d89d in TStreamerInfoActions::GenericWriteAction(TBuffer&, void*, TStreamerInfoActions::TConfiguration const*) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_2_0_pre5/external/slc6_amd64_gcc630/lib/libRIO.so
+#9  0x00002af9dd5bf815 in TBufferFile::ApplySequence(TStreamerInfoActions::TActionSequence const&, void*) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_2_0_pre5/external/slc6_amd64_gcc630/lib/libRIO.so
+#10 0x00002af9dd3401d3 in TBranch::FillImpl(ROOT::Internal::TBranchIMTHelper*) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_2_0_pre5/external/slc6_amd64_gcc630/lib/libTree.so
+#11 0x00002af9dd355de5 in TBranchElement::FillImpl(ROOT::Internal::TBranchIMTHelper*) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_2_0_pre5/external/slc6_amd64_gcc630/lib/libTree.so
+#12 0x00002af9dd39fd0c in TTree::Fill() () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_2_0_pre5/external/slc6_amd64_gcc630/lib/libTree.so
+#13 0x00002afa09ba4039 in ?? ()
+#14 0x0000000000000000 in ?? ()
+===========================================================
+
+
+The lines below might hint at the cause of the crash.
+You may get help by asking at the ROOT forum http://root.cern.ch/forum.
+Only if you are really convinced it is a bug in ROOT then please submit a
+report at http://root.cern.ch/bugs. Please post the ENTIRE stack trace
+from above as an attachment in addition to anything else
+that might help us fixing this issue.
+===========================================================
+#6  0x00002af9dd5c093a in TBufferFile::TagStreamerInfo(TVirtualStreamerInfo*) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_2_0_pre5/external/slc6_amd64_gcc630/lib/libRIO.so
+#7  0x00002af9dd761f8e in int TStreamerInfo::WriteBufferAux<char**>(TBuffer&, char** const&, TStreamerInfo::TCompInfo* const*, int, int, int, int, int) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_2_0_pre5/external/slc6_amd64_gcc630/lib/libRIO.so
+#8  0x00002af9dd64d89d in TStreamerInfoActions::GenericWriteAction(TBuffer&, void*, TStreamerInfoActions::TConfiguration const*) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_2_0_pre5/external/slc6_amd64_gcc630/lib/libRIO.so
+#9  0x00002af9dd5bf815 in TBufferFile::ApplySequence(TStreamerInfoActions::TActionSequence const&, void*) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_2_0_pre5/external/slc6_amd64_gcc630/lib/libRIO.so
+#10 0x00002af9dd3401d3 in TBranch::FillImpl(ROOT::Internal::TBranchIMTHelper*) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_2_0_pre5/external/slc6_amd64_gcc630/lib/libTree.so
+#11 0x00002af9dd355de5 in TBranchElement::FillImpl(ROOT::Internal::TBranchIMTHelper*) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_2_0_pre5/external/slc6_amd64_gcc630/lib/libTree.so
+#12 0x00002af9dd39fd0c in TTree::Fill() () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_2_0_pre5/external/slc6_amd64_gcc630/lib/libTree.so
+#13 0x00002afa09ba4039 in ?? ()
+#14 0x0000000000000000 in ?? ()
+===========================================================
+
+
+Traceback (most recent call last):
+  File "Zllhcc.py", line 660, in <module>
+    outputTree.Fill()
+SystemError: int TTree::Fill() =>
+    problem in C++; program state has been reset
+
+Job finished at Wed Oct  3 17:35:37 CEST 2018 on node 
+ under linux version Scientific Linux CERN SLC release 6.10 (Carbon)
+
+CERN statistics: This process used approximately : 0:00:30 KSI2K hours (30 KSI2K seconds)
+                 This process corresponds to     : 0:01:58 HS06  hours (118 HS06  seconds)
