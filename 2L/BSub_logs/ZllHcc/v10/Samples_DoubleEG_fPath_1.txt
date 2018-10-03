@@ -1,0 +1,9 @@
+srm://dcache-se-cms.desy.de:8443/srm/managerv2?SFN=/pnfs/desy.de/cms/tier2/store/user/lmastrol/VHcc_2016V4_Aug18/DoubleEG/arizzi-NanoDeepAndReg2016Run20116/180817_115139/0000/tree_1.root
+srm://dcache-se-cms.desy.de:8443/srm/managerv2?SFN=/pnfs/desy.de/cms/tier2/store/user/lmastrol/VHcc_2016V4_Aug18/DoubleEG/arizzi-NanoDeepAndReg2016Run20116/180817_115139/0000/tree_2.root
+srm://dcache-se-cms.desy.de:8443/srm/managerv2?SFN=/pnfs/desy.de/cms/tier2/store/user/lmastrol/VHcc_2016V4_Aug18/DoubleEG/arizzi-NanoDeepAndReg2016Run20116/180817_115139/0000/tree_3.root
+srm://dcache-se-cms.desy.de:8443/srm/managerv2?SFN=/pnfs/desy.de/cms/tier2/store/user/lmastrol/VHcc_2016V4_Aug18/DoubleEG/arizzi-NanoDeepAndReg2016Run20116/180817_115139/0000/tree_4.root
+srm://dcache-se-cms.desy.de:8443/srm/managerv2?SFN=/pnfs/desy.de/cms/tier2/store/user/lmastrol/VHcc_2016V4_Aug18/DoubleEG/arizzi-NanoDeepAndReg2016Run20116/180817_115139/0000/tree_5.root
+srm://dcache-se-cms.desy.de:8443/srm/managerv2?SFN=/pnfs/desy.de/cms/tier2/store/user/lmastrol/VHcc_2016V4_Aug18/DoubleEG/arizzi-NanoDeepAndReg2016Run20116/180817_115139/0000/tree_6.root
+srm://dcache-se-cms.desy.de:8443/srm/managerv2?SFN=/pnfs/desy.de/cms/tier2/store/user/lmastrol/VHcc_2016V4_Aug18/DoubleEG/arizzi-NanoDeepAndReg2016Run20116/180817_115139/0000/tree_7.root
+srm://dcache-se-cms.desy.de:8443/srm/managerv2?SFN=/pnfs/desy.de/cms/tier2/store/user/lmastrol/VHcc_2016V4_Aug18/DoubleEG/arizzi-NanoDeepAndReg2016Run20116/180817_115139/0000/tree_8.root
+srm://dcache-se-cms.desy.de:8443/srm/managerv2?SFN=/pnfs/desy.de/cms/tier2/store/user/lmastrol/VHcc_2016V4_Aug18/DoubleEG/arizzi-NanoDeepAndReg2016Run20116/180817_115139/0000/tree_9.root

@@ -1,0 +1,1 @@
+srm://dcache-se-cms.desy.de:8443/srm/managerv2?SFN=/pnfs/desy.de/cms/tier2/store/user/lmastrol/VHcc_2016V4_Aug18/DYJetsToLL_M-50_HT-200to400_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/arizzi-RunIIMoriond17-DeepAndR95/180909_005914/0000/tree_3.root
