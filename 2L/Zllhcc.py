@@ -20,7 +20,7 @@ number = fileName.split('/0000/')[1].split('.root')[0].split('_')[1]
 temp = fileName.split(channel+'/')[1].split("/0000/")[0]
 label = temp.split('/')[0]+"_"+number
 
-oFile = TFile('/eos/cms/store/user/jblee/Hcc/'+version+'/'+channel+'/tree_'+label+'.root','RECREATE')
+oFile = TFile('/eos/cms/store/user/jblee/Hcc/ZllHcc/'+version+'/'+channel+'/tree_'+label+'.root','RECREATE')
 
 oFile.cd()
 outputTree = TTree("Events","Events")
