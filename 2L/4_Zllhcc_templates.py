@@ -13,9 +13,10 @@ comb={}
 comb['Comb0_ZpT_bin1'] = [75,105,50,200,50,150,0.40,0.20]
 comb['Comb0_ZpT_bin2'] = [75,105,50,200,0,150, 0.40,0.20]
 
+# comb['Comb0_ZpT_bin1'] = [75,105,50,200,50,150,0.40,0.20]
 # TAG = 'SR_WP_Scan_CvsL45_CvsB15'
 # TAG = 'CvsB_CvsL_CR2'
-TAG = 'CR_minZmass50' 
+TAG = 'SR_bins' 
 version = 'v10'
 nlepton = 'ZllHcc'
 
@@ -95,6 +96,7 @@ for ckey in comb:
             cut =  "*((50<Z_Mass)*(Z_Mass<"+Zmin+")||(Z_Mass>"+Zmax+"))"
             cut += "*(CvsL_CvsLJet1>"+CvsL+")"
             cut += "*(CvsB_CvsLJet1<"+CvsB+")"
+#             cut += "*is_M"
         elif 'CvsB_CvsL_CR1' in TAG:
             cut = "*(CvsL_CvsLJet1<"+CvsL+")"
             cut += "*(CvsB_CvsLJet1>"+CvsB+")"
@@ -152,9 +154,8 @@ for ckey in comb:
             tempHistDM_jet_CvsL  = jet_CvsL.Clone('jet_CvsL_'+ckey+'__data_obs')    
             tempHistDM_jet_CvsB  = jet_CvsB.Clone('jet_CvsB_'+ckey+'__data_obs')    
 
-
         Z_Mass.Draw()
-        Z_Mass.Write()
+        Z_Mass.Write()        
         c1.Clear()
         c1.Update()
 
@@ -226,6 +227,7 @@ for ckey in comb:
     tempHistDE.Add(tempHistDM)
     tempHistDE.Draw()
     tempHistDE.Write()
+
 
     tempHistDE_ZZ.Add(tempHistDM_ZZ)
     tempHistDE_ZZ.Draw()

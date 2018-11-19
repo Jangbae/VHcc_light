@@ -1,0 +1,442 @@
+Sender: LSF System <lsfadmin@b62191fe13.cern.ch>
+Subject: Job 205757146: </afs/cern.ch/work/j/jblee/private/Hcc/CMSSW_10_2_0_pre5/src/VHcc/2L/BSub_logs/ZllHcc/v10/DoubleEG/job_arizzi-NanoDeepAndReg2016Run20118_295.sh> in cluster <batch> Exited
+
+Job </afs/cern.ch/work/j/jblee/private/Hcc/CMSSW_10_2_0_pre5/src/VHcc/2L/BSub_logs/ZllHcc/v10/DoubleEG/job_arizzi-NanoDeepAndReg2016Run20118_295.sh> was submitted from host <lxplus006.cern.ch> by user <jblee> in cluster <batch>.
+Job was executed on host(s) <b62191fe13.cern.ch>, in queue <8nh>, as user <jblee> in cluster <batch>.
+</afs/cern.ch/user/j/jblee> was used as the home directory.
+</afs/cern.ch/work/j/jblee/private/Hcc/CMSSW_10_2_0_pre5/src/VHcc/2L> was used as the working directory.
+Started at Fri Nov  2 06:52:22 2018
+Results reported on Fri Nov  2 06:55:31 2018
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/afs/cern.ch/work/j/jblee/private/Hcc/CMSSW_10_2_0_pre5/src/VHcc/2L/BSub_logs/ZllHcc/v10/DoubleEG/job_arizzi-NanoDeepAndReg2016Run20118_295.sh
+------------------------------------------------------------
+
+Exited with exit code 255.
+
+Resource usage summary:
+
+    CPU time :                                   10.36 sec.
+    Max Memory :                                 387.99 MB
+    Average Memory :                             189.64 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1127 MB
+    Max Processes :                              13
+    Max Threads :                                20
+    Run time :                                   186 sec.
+    Turnaround time :                            40641 sec.
+
+The output (if any) follows:
+
+@(#)CERN job starter $Date: 2010/06/23 14:22:16 $
+Working directory is </pool/lsf/jblee/205757146> on <b62191fe13.cern.ch>
+
+SysError in <TFile::TFile>: file /eos/cms/store/user/jblee/Hcc/ZllHcc/v10/DoubleEG/tree_arizzi-NanoDeepAndReg2016Run20118_295.root can not be opened (Input/output error)
+
+ *** Break *** segmentation violation
+start_time :  Fri Nov  2 06:52:44 2018
+processing on :  /store/user/lmastrol/VHcc_2016V4_Aug18/DoubleEG/arizzi-NanoDeepAndReg2016Run20118/180817_115303/0000/tree_295.root
+Number of events processed :  0
+
+
+
+===========================================================
+There was a crash.
+This is the entire stack trace of all threads:
+===========================================================
+
+Thread 7 (Thread 0x2b21ac803700 (LWP 13437)):
+#0  0x00002b21996fc499 in syscall () from /lib64/libc.so.6
+#1  0x00002b21a7a8418f in XrdSys::LinuxSemaphore::Wait (this=0x3404360) at /build/cmsbld/auto-builds/CMSSW_10_2_0_pre4-slc6_amd64_gcc630/build/CMSSW_10_2_0_pre4-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.8.3/xrootd-4.8.3/src/./XrdSys/XrdSysLinuxSemaphore.hh:161
+#2  XrdCl::SyncQueue<XrdCl::JobManager::JobHelper>::Get (this=0x3404a38) at /build/cmsbld/auto-builds/CMSSW_10_2_0_pre4-slc6_amd64_gcc630/build/CMSSW_10_2_0_pre4-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.8.3/xrootd-4.8.3/src/./XrdCl/XrdClSyncQueue.hh:67
+#3  XrdCl::JobManager::RunJobs (this=0x3404a20) at /build/cmsbld/auto-builds/CMSSW_10_2_0_pre4-slc6_amd64_gcc630/build/CMSSW_10_2_0_pre4-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.8.3/xrootd-4.8.3/src/XrdCl/XrdClJobManager.cc:146
+#4  0x00002b21a7a84349 in RunRunnerThread (arg=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_10_2_0_pre4-slc6_amd64_gcc630/build/CMSSW_10_2_0_pre4-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.8.3/xrootd-4.8.3/src/XrdCl/XrdClJobManager.cc:33
+#5  0x00002b2198d75aa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00002b21996ffc4d in clone () from /lib64/libc.so.6
+
+Thread 6 (Thread 0x2b21ac602700 (LWP 13436)):
+#0  0x00002b21996fc499 in syscall () from /lib64/libc.so.6
+#1  0x00002b21a7a8418f in XrdSys::LinuxSemaphore::Wait (this=0x3404360) at /build/cmsbld/auto-builds/CMSSW_10_2_0_pre4-slc6_amd64_gcc630/build/CMSSW_10_2_0_pre4-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.8.3/xrootd-4.8.3/src/./XrdSys/XrdSysLinuxSemaphore.hh:161
+#2  XrdCl::SyncQueue<XrdCl::JobManager::JobHelper>::Get (this=0x3404a38) at /build/cmsbld/auto-builds/CMSSW_10_2_0_pre4-slc6_amd64_gcc630/build/CMSSW_10_2_0_pre4-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.8.3/xrootd-4.8.3/src/./XrdCl/XrdClSyncQueue.hh:67
+#3  XrdCl::JobManager::RunJobs (this=0x3404a20) at /build/cmsbld/auto-builds/CMSSW_10_2_0_pre4-slc6_amd64_gcc630/build/CMSSW_10_2_0_pre4-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.8.3/xrootd-4.8.3/src/XrdCl/XrdClJobManager.cc:146
+#4  0x00002b21a7a84349 in RunRunnerThread (arg=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_10_2_0_pre4-slc6_amd64_gcc630/build/CMSSW_10_2_0_pre4-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.8.3/xrootd-4.8.3/src/XrdCl/XrdClJobManager.cc:33
+#5  0x00002b2198d75aa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00002b21996ffc4d in clone () from /lib64/libc.so.6
+
+Thread 5 (Thread 0x2b21ac401700 (LWP 13435)):
+#0  0x00002b21996fc499 in syscall () from /lib64/libc.so.6
+#1  0x00002b21a7a8418f in XrdSys::LinuxSemaphore::Wait (this=0x3404360) at /build/cmsbld/auto-builds/CMSSW_10_2_0_pre4-slc6_amd64_gcc630/build/CMSSW_10_2_0_pre4-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.8.3/xrootd-4.8.3/src/./XrdSys/XrdSysLinuxSemaphore.hh:161
+#2  XrdCl::SyncQueue<XrdCl::JobManager::JobHelper>::Get (this=0x3404a38) at /build/cmsbld/auto-builds/CMSSW_10_2_0_pre4-slc6_amd64_gcc630/build/CMSSW_10_2_0_pre4-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.8.3/xrootd-4.8.3/src/./XrdCl/XrdClSyncQueue.hh:67
+#3  XrdCl::JobManager::RunJobs (this=0x3404a20) at /build/cmsbld/auto-builds/CMSSW_10_2_0_pre4-slc6_amd64_gcc630/build/CMSSW_10_2_0_pre4-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.8.3/xrootd-4.8.3/src/XrdCl/XrdClJobManager.cc:146
+#4  0x00002b21a7a84349 in RunRunnerThread (arg=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_10_2_0_pre4-slc6_amd64_gcc630/build/CMSSW_10_2_0_pre4-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.8.3/xrootd-4.8.3/src/XrdCl/XrdClJobManager.cc:33
+#5  0x00002b2198d75aa1 in start_thread () from /lib64/libpthread.so.0
+#6  0x00002b21996ffc4d in clone () from /lib64/libc.so.6
+
+Thread 4 (Thread 0x2b21ac200700 (LWP 13434)):
+#0  0x00002b2198d7d00d in nanosleep () from /lib64/libpthread.so.0
+#1  0x00002b21a78b2ef3 in XrdSysTimer::Wait (mills=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_10_2_0_pre4-slc6_amd64_gcc630/build/CMSSW_10_2_0_pre4-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.8.3/xrootd-4.8.3/src/XrdSys/XrdSysTimer.cc:239
+#2  0x00002b21a7a26e97 in XrdCl::TaskManager::RunTasks (this=0x341dd00) at /build/cmsbld/auto-builds/CMSSW_10_2_0_pre4-slc6_amd64_gcc630/build/CMSSW_10_2_0_pre4-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.8.3/xrootd-4.8.3/src/XrdCl/XrdClTaskManager.cc:244
+#3  0x00002b21a7a26fe9 in RunRunnerThread (arg=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_10_2_0_pre4-slc6_amd64_gcc630/build/CMSSW_10_2_0_pre4-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.8.3/xrootd-4.8.3/src/XrdCl/XrdClTaskManager.cc:37
+#4  0x00002b2198d75aa1 in start_thread () from /lib64/libpthread.so.0
+#5  0x00002b21996ffc4d in clone () from /lib64/libc.so.6
+
+Thread 3 (Thread 0x2b21a7e45700 (LWP 13433)):
+#0  0x00002b2199700243 in epoll_wait () from /lib64/libc.so.6
+#1  0x00002b21a78b7fc4 in XrdSys::IOEvents::PollE::Begin (this=0x3415b20, syncsem=<optimized out>, retcode=<optimized out>, eTxt=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_10_2_0_pre4-slc6_amd64_gcc630/build/CMSSW_10_2_0_pre4-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.8.3/xrootd-4.8.3/src/./XrdSys/XrdSysIOEventsPollE.icc:213
+#2  0x00002b21a78b4625 in XrdSys::IOEvents::BootStrap::Start (parg=0x7fff4dc26c70) at /build/cmsbld/auto-builds/CMSSW_10_2_0_pre4-slc6_amd64_gcc630/build/CMSSW_10_2_0_pre4-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.8.3/xrootd-4.8.3/src/XrdSys/XrdSysIOEvents.cc:131
+#3  0x00002b21a78b2718 in XrdSysThread_Xeq (myargs=0x2fdf460) at /build/cmsbld/auto-builds/CMSSW_10_2_0_pre4-slc6_amd64_gcc630/build/CMSSW_10_2_0_pre4-build/BUILD/slc6_amd64_gcc630/external/xrootd/4.8.3/xrootd-4.8.3/src/XrdSys/XrdSysPthread.cc:86
+#4  0x00002b2198d75aa1 in start_thread () from /lib64/libpthread.so.0
+#5  0x00002b21996ffc4d in clone () from /lib64/libc.so.6
+
+Thread 2 (Thread 0x2b21a7878700 (LWP 13432)):
+#0  0x00002b2198d7ba00 in sem_wait () from /lib64/libpthread.so.0
+#1  0x00002b2198c8a118 in PyThread_acquire_lock (lock=lock
+entry=0x78f440, waitflag=waitflag
+entry=1) at Python/thread_pthread.h:324
+#2  0x00002b2198c46f26 in PyEval_RestoreThread (tstate=tstate
+entry=0x2dd6130) at Python/ceval.c:359
+#3  0x00002b21a76730d8 in floatsleep (secs=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_10_1_0-slc6_amd64_gcc630/build/CMSSW_10_1_0-build/BUILD/slc6_amd64_gcc630/external/python/2.7.11-omkpbe2/python-2.7.11/Modules/timemodule.c:959
+#4  time_sleep (self=<optimized out>, args=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_10_1_0-slc6_amd64_gcc630/build/CMSSW_10_1_0-build/BUILD/slc6_amd64_gcc630/external/python/2.7.11-omkpbe2/python-2.7.11/Modules/timemodule.c:206
+#5  0x00002b2198c50b96 in call_function (oparg=<optimized out>, pp_stack=0x2b21a78774d0) at Python/ceval.c:4350
+#6  PyEval_EvalFrameEx (f=f
+entry=0x2b21a763c7d0, throwflag=throwflag
+entry=0) at Python/ceval.c:2987
+#7  0x00002b2198c519bc in PyEval_EvalCodeEx (co=<optimized out>, globals=<optimized out>, locals=locals
+entry=0x0, args=args
+entry=0x2b2199ca0ba8, argcount=1, kws=kws
+entry=0x2b21999ad068, kwcount=0, defs=0x0, defcount=0, closure=0x0) at Python/ceval.c:3582
+#8  0x00002b2198bc83cd in function_call (func=0x2b2199c8fcf8, arg=0x2b2199ca0b90, kw=0x2b2199c627f8) at Objects/funcobject.c:526
+#9  0x00002b2198b97953 in PyObject_Call (func=func
+entry=0x2b2199c8fcf8, arg=arg
+entry=0x2b2199ca0b90, kw=kw
+entry=0x2b2199c627f8) at Objects/abstract.c:2546
+#10 0x00002b2198c4bf4c in ext_do_call (nk=<optimized out>, na=0, flags=<optimized out>, pp_stack=0x2b21a7877778, func=0x2b2199c8fcf8) at Python/ceval.c:4663
+#11 PyEval_EvalFrameEx (f=f
+entry=0x2b2199c94938, throwflag=throwflag
+entry=0) at Python/ceval.c:3026
+#12 0x00002b2198c4ec72 in fast_function (nk=0, na=<optimized out>, n=<optimized out>, pp_stack=0x2b21a78778b0, func=<optimized out>) at Python/ceval.c:4436
+#13 call_function (oparg=<optimized out>, pp_stack=0x2b21a78778b0) at Python/ceval.c:4371
+#14 PyEval_EvalFrameEx (f=f
+entry=0x2b21a8000910, throwflag=throwflag
+entry=0) at Python/ceval.c:2987
+#15 0x00002b2198c4ec72 in fast_function (nk=0, na=<optimized out>, n=<optimized out>, pp_stack=0x2b21a78779f0, func=<optimized out>) at Python/ceval.c:4436
+#16 call_function (oparg=<optimized out>, pp_stack=0x2b21a78779f0) at Python/ceval.c:4371
+#17 PyEval_EvalFrameEx (f=f
+entry=0x2b2199ae8c90, throwflag=throwflag
+entry=0) at Python/ceval.c:2987
+#18 0x00002b2198c519bc in PyEval_EvalCodeEx (co=<optimized out>, globals=<optimized out>, locals=locals
+entry=0x0, args=args
+entry=0x2b2199ca0b68, argcount=1, kws=kws
+entry=0x0, kwcount=0, defs=0x0, defcount=0, closure=0x0) at Python/ceval.c:3582
+#19 0x00002b2198bc82fc in function_call (func=0x2b21a7633050, arg=0x2b2199ca0b50, kw=0x0) at Objects/funcobject.c:526
+#20 0x00002b2198b97953 in PyObject_Call (func=func
+entry=0x2b21a7633050, arg=arg
+entry=0x2b2199ca0b50, kw=kw
+entry=0x0) at Objects/abstract.c:2546
+#21 0x00002b2198ba8b8c in instancemethod_call (func=0x2b21a7633050, arg=0x2b2199ca0b50, kw=0x0) at Objects/classobject.c:2602
+#22 0x00002b2198b97953 in PyObject_Call (func=func
+entry=0x2b2199b9fc80, arg=arg
+entry=0x2b21999ad050, kw=<optimized out>) at Objects/abstract.c:2546
+#23 0x00002b2198c47607 in PyEval_CallObjectWithKeywords (func=0x2b2199b9fc80, arg=0x2b21999ad050, kw=<optimized out>) at Python/ceval.c:4219
+#24 0x00002b2198c90032 in t_bootstrap (boot_raw=0x2dd0300) at ./Modules/threadmodule.c:620
+#25 0x00002b2198d75aa1 in start_thread () from /lib64/libpthread.so.0
+#26 0x00002b21996ffc4d in clone () from /lib64/libc.so.6
+
+Thread 1 (Thread 0x2b21999abe20 (LWP 13408)):
+#0  0x00002b21996c38dd in waitpid () from /lib64/libc.so.6
+#1  0x00002b21996554e9 in do_system () from /lib64/libc.so.6
+#2  0x00002b2199655820 in system () from /lib64/libc.so.6
+#3  0x00002b219a7d1be8 in TUnixSystem::StackTrace() () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_2_0_pre5/external/slc6_amd64_gcc630/lib/libCore.so
+#4  0x00002b219a7d40ec in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_2_0_pre5/external/slc6_amd64_gcc630/lib/libCore.so
+#5  <signal handler called>
+#6  0x00002b219a23393a in TBufferFile::TagStreamerInfo(TVirtualStreamerInfo*) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_2_0_pre5/external/slc6_amd64_gcc630/lib/libRIO.so
+#7  0x00002b219a3d4f8e in int TStreamerInfo::WriteBufferAux<char**>(TBuffer&, char** const&, TStreamerInfo::TCompInfo* const*, int, int, int, int, int) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_2_0_pre5/external/slc6_amd64_gcc630/lib/libRIO.so
+#8  0x00002b219a2c089d in TStreamerInfoActions::GenericWriteAction(TBuffer&, void*, TStreamerInfoActions::TConfiguration const*) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_2_0_pre5/external/slc6_amd64_gcc630/lib/libRIO.so
+#9  0x00002b219a232815 in TBufferFile::ApplySequence(TStreamerInfoActions::TActionSequence const&, void*) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_2_0_pre5/external/slc6_amd64_gcc630/lib/libRIO.so
+#10 0x00002b2199fb31d3 in TBranch::FillImpl(ROOT::Internal::TBranchIMTHelper*) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_2_0_pre5/external/slc6_amd64_gcc630/lib/libTree.so
+#11 0x00002b2199fc8de5 in TBranchElement::FillImpl(ROOT::Internal::TBranchIMTHelper*) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_2_0_pre5/external/slc6_amd64_gcc630/lib/libTree.so
+#12 0x00002b219a012d0c in TTree::Fill() () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_2_0_pre5/external/slc6_amd64_gcc630/lib/libTree.so
+#13 0x00002b21a0132039 in ?? ()
+#14 0x0000000000000000 in ?? ()
+===========================================================
+
+
+The lines below might hint at the cause of the crash.
+You may get help by asking at the ROOT forum http://root.cern.ch/forum.
+Only if you are really convinced it is a bug in ROOT then please submit a
+report at http://root.cern.ch/bugs. Please post the ENTIRE stack trace
+from above as an attachment in addition to anything else
+that might help us fixing this issue.
+===========================================================
+#6  0x00002b219a23393a in TBufferFile::TagStreamerInfo(TVirtualStreamerInfo*) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_2_0_pre5/external/slc6_amd64_gcc630/lib/libRIO.so
+#7  0x00002b219a3d4f8e in int TStreamerInfo::WriteBufferAux<char**>(TBuffer&, char** const&, TStreamerInfo::TCompInfo* const*, int, int, int, int, int) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_2_0_pre5/external/slc6_amd64_gcc630/lib/libRIO.so
+#8  0x00002b219a2c089d in TStreamerInfoActions::GenericWriteAction(TBuffer&, void*, TStreamerInfoActions::TConfiguration const*) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_2_0_pre5/external/slc6_amd64_gcc630/lib/libRIO.so
+#9  0x00002b219a232815 in TBufferFile::ApplySequence(TStreamerInfoActions::TActionSequence const&, void*) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_2_0_pre5/external/slc6_amd64_gcc630/lib/libRIO.so
+#10 0x00002b2199fb31d3 in TBranch::FillImpl(ROOT::Internal::TBranchIMTHelper*) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_2_0_pre5/external/slc6_amd64_gcc630/lib/libTree.so
+#11 0x00002b2199fc8de5 in TBranchElement::FillImpl(ROOT::Internal::TBranchIMTHelper*) () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_2_0_pre5/external/slc6_amd64_gcc630/lib/libTree.so
+#12 0x00002b219a012d0c in TTree::Fill() () from /cvmfs/cms.cern.ch/slc6_amd64_gcc630/cms/cmssw/CMSSW_10_2_0_pre5/external/slc6_amd64_gcc630/lib/libTree.so
+#13 0x00002b21a0132039 in ?? ()
+#14 0x0000000000000000 in ?? ()
+===========================================================
+
+
+Traceback (most recent call last):
+  File "Zllhcc.py", line 687, in <module>
+    outputTree.Fill()
+SystemError: int TTree::Fill() =>
+    problem in C++; program state has been reset
+
+Job finished at Fri Nov  2 06:55:01 CET 2018 on node 
+ under linux version Scientific Linux CERN SLC release 6.10 (Carbon)
+
+CERN statistics: This process used approximately : 0:00:24 KSI2K hours (24 KSI2K seconds)
+                 This process corresponds to     : 0:01:36 HS06  hours (96 HS06  seconds)
+Sender: LSF System <lsfadmin@b6e53f347141.cern.ch>
+Subject: Job 206012743: </afs/cern.ch/work/j/jblee/private/Hcc/CMSSW_10_2_0_pre5/src/VHcc/2L/BSub_logs/ZllHcc/v10/DoubleEG/job_arizzi-NanoDeepAndReg2016Run20118_295.sh> in cluster <batch> Done
+
+Job </afs/cern.ch/work/j/jblee/private/Hcc/CMSSW_10_2_0_pre5/src/VHcc/2L/BSub_logs/ZllHcc/v10/DoubleEG/job_arizzi-NanoDeepAndReg2016Run20118_295.sh> was submitted from host <lxplus036.cern.ch> by user <jblee> in cluster <batch>.
+Job was executed on host(s) <b6e53f347141.cern.ch>, in queue <8nh>, as user <jblee> in cluster <batch>.
+</afs/cern.ch/user/j/jblee> was used as the home directory.
+</afs/cern.ch/work/j/jblee/private/Hcc/CMSSW_10_2_0_pre5/src/VHcc/2L> was used as the working directory.
+Started at Mon Nov  5 12:45:25 2018
+Results reported on Mon Nov  5 12:49:33 2018
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/afs/cern.ch/work/j/jblee/private/Hcc/CMSSW_10_2_0_pre5/src/VHcc/2L/BSub_logs/ZllHcc/v10/DoubleEG/job_arizzi-NanoDeepAndReg2016Run20118_295.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   19.67 sec.
+    Max Memory :                                 303.80 MB
+    Average Memory :                             162.75 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   974 MB
+    Max Processes :                              9
+    Max Threads :                                15
+    Run time :                                   245 sec.
+    Turnaround time :                            10962 sec.
+
+The output (if any) follows:
+
+@(#)CERN job starter $Date: 2010/06/23 14:22:16 $
+Working directory is </pool/lsf/jblee/206012743> on <b6e53f347141.cern.ch>
+
+start_time :  Mon Nov  5 12:46:02 2018
+processing on :  /store/user/lmastrol/VHcc_2016V4_Aug18/DoubleEG/arizzi-NanoDeepAndReg2016Run20118/180817_115303/0000/tree_295.root
+Number of events processed :  0
+Number of events processed :  100
+Number of events processed :  200
+Number of events processed :  300
+Number of events processed :  400
+Number of events processed :  500
+Number of events processed :  600
+Number of events processed :  700
+Number of events processed :  800
+Number of events processed :  900
+Number of events processed :  1000
+Number of events processed :  1100
+Number of events processed :  1200
+Number of events processed :  1300
+Number of events processed :  1400
+Number of events processed :  1500
+Number of events processed :  1600
+Number of events processed :  1700
+Number of events processed :  1800
+Number of events processed :  1900
+Number of events processed :  2000
+Number of events processed :  2100
+Number of events processed :  2200
+Number of events processed :  2300
+Number of events processed :  2400
+Number of events processed :  2500
+Number of events processed :  2600
+Number of events processed :  2700
+Number of events processed :  2800
+Number of events processed :  2900
+Number of events processed :  3000
+Number of events processed :  3100
+Number of events processed :  3200
+Number of events processed :  3300
+Number of events processed :  3400
+Number of events processed :  3500
+Number of events processed :  3600
+Number of events processed :  3700
+Number of events processed :  3800
+Number of events processed :  3900
+Number of events processed :  4000
+Number of events processed :  4100
+Number of events processed :  4200
+Number of events processed :  4300
+Number of events processed :  4400
+Number of events processed :  4500
+Number of events processed :  4600
+Number of events processed :  4700
+Number of events processed :  4800
+Number of events processed :  4900
+Number of events processed :  5000
+Number of events processed :  5100
+Number of events processed :  5200
+Number of events processed :  5300
+Number of events processed :  5400
+Number of events processed :  5500
+Number of events processed :  5600
+Number of events processed :  5700
+Number of events processed :  5800
+Number of events processed :  5900
+Number of events processed :  6000
+Number of events processed :  6100
+Number of events processed :  6200
+Number of events processed :  6300
+Number of events processed :  6400
+Number of events processed :  6500
+Number of events processed :  6600
+Number of events processed :  6700
+Number of events processed :  6800
+Number of events processed :  6900
+Number of events processed :  7000
+Number of events processed :  7100
+Number of events processed :  7200
+Number of events processed :  7300
+Number of events processed :  7400
+Number of events processed :  7500
+Number of events processed :  7600
+Number of events processed :  7700
+Number of events processed :  7800
+Number of events processed :  7900
+Number of events processed :  8000
+Number of events processed :  8100
+Number of events processed :  8200
+Number of events processed :  8300
+Number of events processed :  8400
+Number of events processed :  8500
+Number of events processed :  8600
+Number of events processed :  8700
+Number of events processed :  8800
+Number of events processed :  8900
+Number of events processed :  9000
+Number of events processed :  9100
+Number of events processed :  9200
+Number of events processed :  9300
+Number of events processed :  9400
+Number of events processed :  9500
+Number of events processed :  9600
+Number of events processed :  9700
+Number of events processed :  9800
+Number of events processed :  9900
+Number of events processed :  10000
+Number of events processed :  10100
+Number of events processed :  10200
+Number of events processed :  10300
+Number of events processed :  10400
+Number of events processed :  10500
+Number of events processed :  10600
+Number of events processed :  10700
+Number of events processed :  10800
+Number of events processed :  10900
+Number of events processed :  11000
+Number of events processed :  11100
+Number of events processed :  11200
+Number of events processed :  11300
+Number of events processed :  11400
+Number of events processed :  11500
+Number of events processed :  11600
+Number of events processed :  11700
+Number of events processed :  11800
+Number of events processed :  11900
+Number of events processed :  12000
+Number of events processed :  12100
+Number of events processed :  12200
+Number of events processed :  12300
+Number of events processed :  12400
+Number of events processed :  12500
+Number of events processed :  12600
+Number of events processed :  12700
+Number of events processed :  12800
+Number of events processed :  12900
+Number of events processed :  13000
+Number of events processed :  13100
+Number of events processed :  13200
+Number of events processed :  13300
+Number of events processed :  13400
+Number of events processed :  13500
+Number of events processed :  13600
+Number of events processed :  13700
+Number of events processed :  13800
+Number of events processed :  13900
+Number of events processed :  14000
+Number of events processed :  14100
+Number of events processed :  14200
+Number of events processed :  14300
+Number of events processed :  14400
+Number of events processed :  14500
+Number of events processed :  14600
+Number of events processed :  14700
+Number of events processed :  14800
+Number of events processed :  14900
+Number of events processed :  15000
+Number of events processed :  15100
+Number of events processed :  15200
+Number of events processed :  15300
+Number of events processed :  15400
+Number of events processed :  15500
+Number of events processed :  15600
+Number of events processed :  15700
+Number of events processed :  15800
+Number of events processed :  15900
+Number of events processed :  16000
+Number of events processed :  16100
+Number of events processed :  16200
+Number of events processed :  16300
+Number of events processed :  16400
+Number of events processed :  16500
+Number of events processed :  16600
+Number of events processed :  16700
+Number of events processed :  16800
+Number of events processed :  16900
+Number of events processed :  17000
+Number of events processed :  17100
+Number of events processed :  17200
+Number of events processed :  17300
+Number of events processed :  17400
+Number of events processed :  17500
+Number of events processed :  17600
+Number of events processed :  17700
+Number of events processed :  17800
+Number of events processed :  17900
+Number of events processed :  18000
+Number of events processed :  18100
+Number of events processed :  18200
+Number of events processed :  18300
+Number of events processed :  18400
+Number of events processed :  18500
+Number of events processed :  18600
+Number of events processed :  18700
+Number of events processed :  18800
+Number of events processed :  18900
+Number of events processed :  19000
+Number of events processed :  19100
+Number of events processed :  19200
+Number of events processed :  19300
+Number of events processed :  19400
+Number of events processed :  19500
+Number of events processed :  19600
+Number of events processed :  19700
+Total events processed :  19746
+--- 2.45 minutes ---
+
+Job finished at Mon Nov  5 12:48:30 CET 2018 on node 
+ under linux version Scientific Linux CERN SLC release 6.10 (Carbon)
+
+CERN statistics: This process used approximately : 0:00:45 KSI2K hours (45 KSI2K seconds)
+                 This process corresponds to     : 0:02:58 HS06  hours (178 HS06  seconds)

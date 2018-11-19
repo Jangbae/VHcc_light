@@ -8,6 +8,12 @@ fileName = str(sys.argv[1])
 channel  = str(sys.argv[2])
 version = str(sys.argv[3]) 
 
+# fileName ="/store/user/lmastrol/VHcc_2016V4_Aug18/ZZ_TuneCUETP8M1_13TeV-pythia8/arizzi-RunIIMoriond17-DeepAndR108/180909_010444/0000/tree_1.root"
+# channel  = 'ZZ_TuneCUETP8M1_13TeV-pythia8'
+# version = 'v1'
+
+
+
 print "start_time : ",time.ctime()
 print "processing on : ",fileName
 
@@ -28,6 +34,7 @@ outputTree = TTree("Events","Events")
 run              = array('d',[0])
 lumiBlock        = array('d',[0])
 event            = array('d',[0])
+LHE_HT           = array('d',[0])
 
 E_Mass           = std.vector('double')()
 E_Pt             = std.vector('double')()
@@ -55,7 +62,7 @@ is_E               = array('d',[0])
 is_M               = array('d',[0])
 is_H_mass_CR       = array('d',[0])
 is_Z_mass_CR       = array('d',[0])
-
+Flag_Z_jet          = array('d',[0])
 
 Z_Mass           = array('d',[0])
 Z_Pt             = array('d',[0])
@@ -125,6 +132,7 @@ phi_Of_bJet         = std.vector('double')()
 outputTree.Branch('run'              ,run           ,'run/D'        )
 outputTree.Branch('lumiBlock'        ,lumiBlock     ,'lumiBlock/D'  )
 outputTree.Branch('event'            ,event         ,'event/D'      )
+outputTree.Branch('LHE_HT'           ,LHE_HT        ,'LHE_HT/D'      )
 
 outputTree.Branch('E_Mass'           ,E_Mass        )
 outputTree.Branch('E_Pt'             ,E_Pt          )
@@ -160,7 +168,7 @@ outputTree.Branch('is_M'     ,is_M    ,'is_M/D'     )
 outputTree.Branch('is_H_mass_CR'     ,is_H_mass_CR    ,'is_H_mass_CR/D'     )
 outputTree.Branch('is_Z_mass_CR'     ,is_Z_mass_CR    ,'is_Z_mass_CR/D'     )
 
-
+outputTree.Branch('Flag_Z_jet'       ,Flag_Z_jet      ,'Flag_Z_jet/D'     )
 outputTree.Branch('numOf_cJet'       ,numOf_cJet      ,'numOf_cJet/D'     )
 outputTree.Branch('numOf_bJet'       ,numOf_bJet      ,'numOf_bJet/D'     )
 outputTree.Branch('numOf_lJet'       ,numOf_lJet      ,'numOf_lJet/D'     )
@@ -273,7 +281,8 @@ for entry in inputTree:
     run[0]              = -1000
     lumiBlock[0]        = -1000
     event[0]            = -1000
-
+    LHE_HT[0]           = -1000
+    
     Z_Mass[0]           = -1000
     Z_Pt[0]             = -1000
     Z_Eta[0]            = -1000
@@ -297,6 +306,7 @@ for entry in inputTree:
     phi_Of_lJet.clear()
 
     jet_nJet[0]            = -1
+    Flag_Z_jet[0]          = -1000
     numOf_cJet[0]          = -1
     numOf_bJet[0]          = -1
     numOf_lJet[0]          = -1
@@ -364,7 +374,7 @@ for entry in inputTree:
         print "                 muon selection : pt > 20 and eta<2.4"
         print "                 muon selection : Muon_mediumId > 0"
         print "                 muon selection : Muon_pfRelIso03_all<0.25"
-
+ 
     for i in range(0, len(entry.Electron_pt)):
         if entry.Electron_pt[i]<20 or abs(entry.Electron_eta[i])>2.5: continue
         if entry.Electron_mvaSpring16GP_WP80[i]<=0: continue
@@ -488,6 +498,20 @@ for entry in inputTree:
         numOf_cJet[0] = jet_FL_List.count(4)
         numOf_bJet[0] = jet_FL_List.count(5)
         numOf_lJet[0] = jet_FL_List.count(0)
+
+    if 'DY' in channel:
+        if jet_FL_List.count(4) >= 2:
+            Flag_Z_jet[0] = 1
+        elif jet_FL_List.count(4) == 1 and jet_FL_List.count(5) == 1:
+            Flag_Z_jet[0] = 2
+        elif jet_FL_List.count(4) == 1 and jet_FL_List.count(0) == 1:
+            Flag_Z_jet[0] = 3
+        elif jet_FL_List.count(5) >= 2:
+            Flag_Z_jet[0] = 4
+        elif jet_FL_List.count(5) == 1 and jet_FL_List.count(0) == 1:
+            Flag_Z_jet[0] = 5
+        else:
+            Flag_Z_jet[0] = 6            
 
     if 'Single' in channel or 'Double' in channel:
         hJets_Pt         = sorted(zip(jetList,jet_Pt_List,                         ), key = lambda pair : pair[1], reverse=True)[0:3]
@@ -657,6 +681,9 @@ for entry in inputTree:
         run[0]              = entry.run
         lumiBlock[0]        = entry.luminosityBlock
         event[0]            = entry.event
+        if not 'Single' in channel and not 'Double' in channel and not 'MET' in channel and not 'WW' in channel and not 'WZ' in channel and 'ZZ' not in channel:
+            LHE_HT[0]           = entry.LHE_HT
+
         outputTree.Fill()
     else: continue
 
@@ -665,8 +692,13 @@ outputTree.Write()
 nEventTree = iFile.Get("Runs")
 nEventCount = 0
 if not 'Single' in channel and not 'Double' in channel:
-    for entry in nEventTree:
-        nEventCount += entry.genEventCount
+    if not 'amcatnlo' in fileName:
+        for entry in nEventTree:
+            nEventCount += entry.genEventCount
+    elif 'amcatnlo' in fileName:
+        for entry in nEventTree:
+            nEventCount += entry.genEventSumw    
+
     print "Total event processed by Nano AOD post processor : ", nEventCount
 print "Total events processed : ",count    
 print("--- %s minutes ---" % (round((time.time() - start_time)/60,2)))

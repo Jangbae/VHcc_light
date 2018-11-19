@@ -1,7 +1,7 @@
 from ROOT import *
 from array import array
 import glob
-import sys
+import sys, os
 
 parent = os.path.join(os.getcwd(), os.pardir)
 sys.path.append(parent)
@@ -10,9 +10,10 @@ import utils
 gStyle.SetOptStat(0)
 gROOT.SetBatch(True)
 
-Region = 'CR_minZmass50'
+Region = '_SR_'
 TAG = 'checkV10_'+Region#+'_log'
 
+# templates/template_v10__SR_.root
 
 Rfile = TFile("templates/template_v10_"+Region+".root",'READ')
 can = TCanvas("can", "can", 800, 800) 
@@ -39,12 +40,55 @@ BKG_List = [
   },
   
   {
-    'component' : 'DYJetsInc',
-    'fillcolor' : 800-2,
+    'component' : 'cc__DYJets',
+    'fillcolor' : 400-1,
     'fillstyle' : 1001,
     'linewidth' : 2,
     'linestyle' : 1,
-    'label'     : 'DY',
+    'label'     : 'cc__DYJets',
+  },
+  {
+    'component' : 'cb__DYJets',
+    'fillcolor' : 400-2,
+    'fillstyle' : 1001,
+    'linewidth' : 2,
+    'linestyle' : 1,
+    'label'     : 'cb__DYJets',
+  },
+  {
+    'component' : 'cl__DYJets',
+    'fillcolor' : 400-3,
+    'fillstyle' : 1001,
+    'linewidth' : 2,
+    'linestyle' : 1,
+    'label'     : 'cl__DYJets',
+  },
+
+  {
+    'component' : 'bb__DYJets',
+    'fillcolor' : 400-5,
+    'fillstyle' : 1001,
+    'linewidth' : 2,
+    'linestyle' : 1,
+    'label'     : 'bb__DYJets',
+  },
+
+  {
+    'component' : 'bl__DYJets',
+    'fillcolor' : 400-6,
+    'fillstyle' : 1001,
+    'linewidth' : 2,
+    'linestyle' : 1,
+    'label'     : 'bl__DYJets',
+  },
+
+  {
+    'component' : 'll__DYJets',
+    'fillcolor' : 400-8,
+    'fillstyle' : 1001,
+    'linewidth' : 2,
+    'linestyle' : 1,
+    'label'     : 'll__DYJets',
   },
 
   {
@@ -68,30 +112,30 @@ BKG_List = [
 comb = 'Comb0'
 hist={}
 variable_List = [
-'Z_Pt_'+comb+'_ZpT_bin1',
-'Z_Mass_'+comb+'_ZpT_bin1', 
-'jet_CvsL_'+comb+'_ZpT_bin1',
-'jet_CvsB_'+comb+'_ZpT_bin1',
-'jet_Pt_'+comb+'_ZpT_bin1',
-'jet_Eta_'+comb+'_ZpT_bin1',
-'jet_Phi_'+comb+'_ZpT_bin1',
-'M_Pt_'+comb+'_ZpT_bin1',
-'M_Eta_'+comb+'_ZpT_bin1',
-'E_Pt_'+comb+'_ZpT_bin1',
-'E_Eta_'+comb+'_ZpT_bin1',
+# 'Z_Pt_'+comb+'_ZpT_bin1',
+# 'Z_Mass_'+comb+'_ZpT_bin1', 
+# 'jet_CvsL_'+comb+'_ZpT_bin1',
+# 'jet_CvsB_'+comb+'_ZpT_bin1',
+# 'jet_Pt_'+comb+'_ZpT_bin1',
+# 'jet_Eta_'+comb+'_ZpT_bin1',
+# 'jet_Phi_'+comb+'_ZpT_bin1',
+# 'M_Pt_'+comb+'_ZpT_bin1',
+# 'M_Eta_'+comb+'_ZpT_bin1',
+# 'E_Pt_'+comb+'_ZpT_bin1',
+# 'E_Eta_'+comb+'_ZpT_bin1',
 'HIGGS_CvsL_Mass_'+comb+'_ZpT_bin1',
  
-'Z_Mass_'+comb+'_ZpT_bin2', 
-'Z_Pt_'+comb+'_ZpT_bin2',
-'jet_CvsL_'+comb+'_ZpT_bin2',
-'jet_CvsB_'+comb+'_ZpT_bin2',
-'jet_Pt_'+comb+'_ZpT_bin2',
-'jet_Eta_'+comb+'_ZpT_bin2',
-'jet_Phi_'+comb+'_ZpT_bin2',
-'M_Pt_'+comb+'_ZpT_bin2',
-'M_Eta_'+comb+'_ZpT_bin2',
-'E_Pt_'+comb+'_ZpT_bin2',
-'E_Eta_'+comb+'_ZpT_bin2',
+# 'Z_Mass_'+comb+'_ZpT_bin2', 
+# 'Z_Pt_'+comb+'_ZpT_bin2',
+# 'jet_CvsL_'+comb+'_ZpT_bin2',
+# 'jet_CvsB_'+comb+'_ZpT_bin2',
+# 'jet_Pt_'+comb+'_ZpT_bin2',
+# 'jet_Eta_'+comb+'_ZpT_bin2',
+# 'jet_Phi_'+comb+'_ZpT_bin2',
+# 'M_Pt_'+comb+'_ZpT_bin2',
+# 'M_Eta_'+comb+'_ZpT_bin2',
+# 'E_Pt_'+comb+'_ZpT_bin2',
+# 'E_Eta_'+comb+'_ZpT_bin2',
 'HIGGS_CvsL_Mass_'+comb+'_ZpT_bin2',
 ]
 

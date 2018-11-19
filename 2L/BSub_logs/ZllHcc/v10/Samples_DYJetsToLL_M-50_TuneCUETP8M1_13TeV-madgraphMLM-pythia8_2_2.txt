@@ -1,4 +1,3 @@
-log
 tree_10.root
 tree_11.root
 tree_12.root

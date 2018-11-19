@@ -4,23 +4,23 @@ os.system("cp /tmp/x509up_u37238 /afs/cern.ch/user/j/jblee/")
 
 
 sampleList_ZllHcc = [
-# 'DoubleEG',
-# 'DoubleMuon',
-# 
-# 'DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
-# 'DYJetsToLL_M-50_HT-100to200_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
-# 'DYJetsToLL_M-50_HT-1200to2500_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
-# 'DYJetsToLL_M-50_HT-200to400_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
-# 'DYJetsToLL_M-50_HT-2500toInf_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
-# 'DYJetsToLL_M-50_HT-400to600_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
-# 'DYJetsToLL_M-50_HT-600to800_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
-# 'DYJetsToLL_M-50_HT-800to1200_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
-# 'TT_TuneCUETP8M2T4_13TeV-powheg-pythia8',
-# 'WW_TuneCUETP8M1_13TeV-pythia8',
+'DoubleEG',
+'DoubleMuon',
+
+'DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
+'DYJetsToLL_M-50_HT-100to200_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
+'DYJetsToLL_M-50_HT-1200to2500_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
+'DYJetsToLL_M-50_HT-200to400_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
+'DYJetsToLL_M-50_HT-2500toInf_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
+'DYJetsToLL_M-50_HT-400to600_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
+'DYJetsToLL_M-50_HT-600to800_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
+'DYJetsToLL_M-50_HT-800to1200_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
+'TT_TuneCUETP8M2T4_13TeV-powheg-pythia8',
+'WW_TuneCUETP8M1_13TeV-pythia8',
 'WZ_TuneCUETP8M1_13TeV-pythia8',
-# 'ZH_HToBB_ZToLL_M125_13TeV_powheg_pythia8',
-# 'ZH_HToCC_ZToLL_M125_13TeV_powheg_pythia8',
-# 'ZZ_TuneCUETP8M1_13TeV-pythia8',
+'ZH_HToBB_ZToLL_M125_13TeV_powheg_pythia8',
+'ZH_HToCC_ZToLL_M125_13TeV_powheg_pythia8',
+'ZZ_TuneCUETP8M1_13TeV-pythia8',
 ]
 
 nlepton = 'ZllHcc'

@@ -1,0 +1,73 @@
+Sender: LSF System <lsfadmin@b625a93cc7.cern.ch>
+Subject: Job 205756569: </afs/cern.ch/work/j/jblee/private/Hcc/CMSSW_10_2_0_pre5/src/VHcc/2L/BSub_logs/ZllHcc/v10/DoubleEG/job_arizzi-NanoDeepAndReg2016Run20116_9.sh> in cluster <batch> Done
+
+Job </afs/cern.ch/work/j/jblee/private/Hcc/CMSSW_10_2_0_pre5/src/VHcc/2L/BSub_logs/ZllHcc/v10/DoubleEG/job_arizzi-NanoDeepAndReg2016Run20116_9.sh> was submitted from host <lxplus006.cern.ch> by user <jblee> in cluster <batch>.
+Job was executed on host(s) <b625a93cc7.cern.ch>, in queue <8nh>, as user <jblee> in cluster <batch>.
+</afs/cern.ch/user/j/jblee> was used as the home directory.
+</afs/cern.ch/work/j/jblee/private/Hcc/CMSSW_10_2_0_pre5/src/VHcc/2L> was used as the working directory.
+Started at Fri Nov  2 06:06:15 2018
+Results reported on Fri Nov  2 06:09:30 2018
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/afs/cern.ch/work/j/jblee/private/Hcc/CMSSW_10_2_0_pre5/src/VHcc/2L/BSub_logs/ZllHcc/v10/DoubleEG/job_arizzi-NanoDeepAndReg2016Run20116_9.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   8.56 sec.
+    Max Memory :                                 263.83 MB
+    Average Memory :                             194.71 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   952 MB
+    Max Processes :                              6
+    Max Threads :                                13
+    Run time :                                   162 sec.
+    Turnaround time :                            38043 sec.
+
+The output (if any) follows:
+
+@(#)CERN job starter $Date: 2010/06/23 14:22:16 $
+Working directory is </pool/lsf/jblee/205756569> on <b625a93cc7.cern.ch>
+
+start_time :  Fri Nov  2 06:06:42 2018
+processing on :  /store/user/lmastrol/VHcc_2016V4_Aug18/DoubleEG/arizzi-NanoDeepAndReg2016Run20116/180817_115139/0000/tree_9.root
+Number of events processed :  0
+Number of events processed :  100
+Number of events processed :  200
+Number of events processed :  300
+Number of events processed :  400
+Number of events processed :  500
+Number of events processed :  600
+Number of events processed :  700
+Number of events processed :  800
+Number of events processed :  900
+Number of events processed :  1000
+Number of events processed :  1100
+Number of events processed :  1200
+Number of events processed :  1300
+Number of events processed :  1400
+Number of events processed :  1500
+Number of events processed :  1600
+Number of events processed :  1700
+Number of events processed :  1800
+Number of events processed :  1900
+Number of events processed :  2000
+Number of events processed :  2100
+Number of events processed :  2200
+Number of events processed :  2300
+Number of events processed :  2400
+Number of events processed :  2500
+Total events processed :  2588
+--- 2.23 minutes ---
+
+Job finished at Fri Nov  2 06:08:56 CET 2018 on node 
+ under linux version Scientific Linux CERN SLC release 6.10 (Carbon)
+
+CERN statistics: This process used approximately : 0:00:19 KSI2K hours (19 KSI2K seconds)
+                 This process corresponds to     : 0:01:17 HS06  hours (77 HS06  seconds)

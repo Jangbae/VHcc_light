@@ -1,0 +1,241 @@
+Sender: LSF System <lsfadmin@b6ca7cb14ff1.cern.ch>
+Subject: Job 205757317: </afs/cern.ch/work/j/jblee/private/Hcc/CMSSW_10_2_0_pre5/src/VHcc/2L/BSub_logs/ZllHcc/v10/DoubleEG/job_arizzi-NanoDeepAndReg2016Run20119_56.sh> in cluster <batch> Done
+
+Job </afs/cern.ch/work/j/jblee/private/Hcc/CMSSW_10_2_0_pre5/src/VHcc/2L/BSub_logs/ZllHcc/v10/DoubleEG/job_arizzi-NanoDeepAndReg2016Run20119_56.sh> was submitted from host <lxplus006.cern.ch> by user <jblee> in cluster <batch>.
+Job was executed on host(s) <b6ca7cb14ff1.cern.ch>, in queue <8nh>, as user <jblee> in cluster <batch>.
+</afs/cern.ch/user/j/jblee> was used as the home directory.
+</afs/cern.ch/work/j/jblee/private/Hcc/CMSSW_10_2_0_pre5/src/VHcc/2L> was used as the working directory.
+Started at Fri Nov  2 08:17:11 2018
+Results reported on Fri Nov  2 08:21:06 2018
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/afs/cern.ch/work/j/jblee/private/Hcc/CMSSW_10_2_0_pre5/src/VHcc/2L/BSub_logs/ZllHcc/v10/DoubleEG/job_arizzi-NanoDeepAndReg2016Run20119_56.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   26.22 sec.
+    Max Memory :                                 285.21 MB
+    Average Memory :                             236.16 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   959 MB
+    Max Processes :                              6
+    Max Threads :                                13
+    Run time :                                   233 sec.
+    Turnaround time :                            45734 sec.
+
+The output (if any) follows:
+
+@(#)CERN job starter $Date: 2010/06/23 14:22:16 $
+Working directory is </pool/lsf/jblee/205757317> on <b6ca7cb14ff1.cern.ch>
+
+start_time :  Fri Nov  2 08:17:31 2018
+processing on :  /store/user/lmastrol/VHcc_2016V4_Aug18/DoubleEG/arizzi-NanoDeepAndReg2016Run20119/180817_115345/0000/tree_56.root
+Number of events processed :  0
+Number of events processed :  100
+Number of events processed :  200
+Number of events processed :  300
+Number of events processed :  400
+Number of events processed :  500
+Number of events processed :  600
+Number of events processed :  700
+Number of events processed :  800
+Number of events processed :  900
+Number of events processed :  1000
+Number of events processed :  1100
+Number of events processed :  1200
+Number of events processed :  1300
+Number of events processed :  1400
+Number of events processed :  1500
+Number of events processed :  1600
+Number of events processed :  1700
+Number of events processed :  1800
+Number of events processed :  1900
+Number of events processed :  2000
+Number of events processed :  2100
+Number of events processed :  2200
+Number of events processed :  2300
+Number of events processed :  2400
+Number of events processed :  2500
+Number of events processed :  2600
+Number of events processed :  2700
+Number of events processed :  2800
+Number of events processed :  2900
+Number of events processed :  3000
+Number of events processed :  3100
+Number of events processed :  3200
+Number of events processed :  3300
+Number of events processed :  3400
+Number of events processed :  3500
+Number of events processed :  3600
+Number of events processed :  3700
+Number of events processed :  3800
+Number of events processed :  3900
+Number of events processed :  4000
+Number of events processed :  4100
+Number of events processed :  4200
+Number of events processed :  4300
+Number of events processed :  4400
+Number of events processed :  4500
+Number of events processed :  4600
+Number of events processed :  4700
+Number of events processed :  4800
+Number of events processed :  4900
+Number of events processed :  5000
+Number of events processed :  5100
+Number of events processed :  5200
+Number of events processed :  5300
+Number of events processed :  5400
+Number of events processed :  5500
+Number of events processed :  5600
+Number of events processed :  5700
+Number of events processed :  5800
+Number of events processed :  5900
+Number of events processed :  6000
+Number of events processed :  6100
+Number of events processed :  6200
+Number of events processed :  6300
+Number of events processed :  6400
+Number of events processed :  6500
+Number of events processed :  6600
+Number of events processed :  6700
+Number of events processed :  6800
+Number of events processed :  6900
+Number of events processed :  7000
+Number of events processed :  7100
+Number of events processed :  7200
+Number of events processed :  7300
+Number of events processed :  7400
+Number of events processed :  7500
+Number of events processed :  7600
+Number of events processed :  7700
+Number of events processed :  7800
+Number of events processed :  7900
+Number of events processed :  8000
+Number of events processed :  8100
+Number of events processed :  8200
+Number of events processed :  8300
+Number of events processed :  8400
+Number of events processed :  8500
+Number of events processed :  8600
+Number of events processed :  8700
+Number of events processed :  8800
+Number of events processed :  8900
+Number of events processed :  9000
+Number of events processed :  9100
+Number of events processed :  9200
+Number of events processed :  9300
+Number of events processed :  9400
+Number of events processed :  9500
+Number of events processed :  9600
+Number of events processed :  9700
+Number of events processed :  9800
+Number of events processed :  9900
+Number of events processed :  10000
+Number of events processed :  10100
+Number of events processed :  10200
+Number of events processed :  10300
+Number of events processed :  10400
+Number of events processed :  10500
+Number of events processed :  10600
+Number of events processed :  10700
+Number of events processed :  10800
+Number of events processed :  10900
+Number of events processed :  11000
+Number of events processed :  11100
+Number of events processed :  11200
+Number of events processed :  11300
+Number of events processed :  11400
+Number of events processed :  11500
+Number of events processed :  11600
+Number of events processed :  11700
+Number of events processed :  11800
+Number of events processed :  11900
+Number of events processed :  12000
+Number of events processed :  12100
+Number of events processed :  12200
+Number of events processed :  12300
+Number of events processed :  12400
+Number of events processed :  12500
+Number of events processed :  12600
+Number of events processed :  12700
+Number of events processed :  12800
+Number of events processed :  12900
+Number of events processed :  13000
+Number of events processed :  13100
+Number of events processed :  13200
+Number of events processed :  13300
+Number of events processed :  13400
+Number of events processed :  13500
+Number of events processed :  13600
+Number of events processed :  13700
+Number of events processed :  13800
+Number of events processed :  13900
+Number of events processed :  14000
+Number of events processed :  14100
+Number of events processed :  14200
+Number of events processed :  14300
+Number of events processed :  14400
+Number of events processed :  14500
+Number of events processed :  14600
+Number of events processed :  14700
+Number of events processed :  14800
+Number of events processed :  14900
+Number of events processed :  15000
+Number of events processed :  15100
+Number of events processed :  15200
+Number of events processed :  15300
+Number of events processed :  15400
+Number of events processed :  15500
+Number of events processed :  15600
+Number of events processed :  15700
+Number of events processed :  15800
+Number of events processed :  15900
+Number of events processed :  16000
+Number of events processed :  16100
+Number of events processed :  16200
+Number of events processed :  16300
+Number of events processed :  16400
+Number of events processed :  16500
+Number of events processed :  16600
+Number of events processed :  16700
+Number of events processed :  16800
+Number of events processed :  16900
+Number of events processed :  17000
+Number of events processed :  17100
+Number of events processed :  17200
+Number of events processed :  17300
+Number of events processed :  17400
+Number of events processed :  17500
+Number of events processed :  17600
+Number of events processed :  17700
+Number of events processed :  17800
+Number of events processed :  17900
+Number of events processed :  18000
+Number of events processed :  18100
+Number of events processed :  18200
+Number of events processed :  18300
+Number of events processed :  18400
+Number of events processed :  18500
+Number of events processed :  18600
+Number of events processed :  18700
+Number of events processed :  18800
+Number of events processed :  18900
+Number of events processed :  19000
+Number of events processed :  19100
+Number of events processed :  19200
+Number of events processed :  19300
+Total events processed :  19366
+--- 3.51 minutes ---
+
+Job finished at Fri Nov  2 08:21:03 CET 2018 on node 
+ under linux version Scientific Linux CERN SLC release 6.10 (Carbon)
+
+CERN statistics: This process used approximately : 0:01:00 KSI2K hours (60 KSI2K seconds)
+                 This process corresponds to     : 0:03:57 HS06  hours (237 HS06  seconds)
