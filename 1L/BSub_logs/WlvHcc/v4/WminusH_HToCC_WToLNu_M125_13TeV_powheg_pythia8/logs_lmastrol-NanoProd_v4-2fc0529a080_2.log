@@ -1,0 +1,51 @@
+Sender: LSF System <lsfadmin@b6368e9797.cern.ch>
+Subject: Job 207591441: </afs/cern.ch/work/j/jblee/private/Hcc/CMSSW_10_2_0_pre5/src/VHcc/1L/BSub_logs/WlvHcc/v4/WminusH_HToCC_WToLNu_M125_13TeV_powheg_pythia8/job_lmastrol-NanoProd_v4-2fc0529a080_2.sh> in cluster <batch> Exited
+
+Job </afs/cern.ch/work/j/jblee/private/Hcc/CMSSW_10_2_0_pre5/src/VHcc/1L/BSub_logs/WlvHcc/v4/WminusH_HToCC_WToLNu_M125_13TeV_powheg_pythia8/job_lmastrol-NanoProd_v4-2fc0529a080_2.sh> was submitted from host <lxplus054.cern.ch> by user <jblee> in cluster <batch>.
+Job was executed on host(s) <b6368e9797.cern.ch>, in queue <8nh>, as user <jblee> in cluster <batch>.
+</afs/cern.ch/user/j/jblee> was used as the home directory.
+</afs/cern.ch/work/j/jblee/private/Hcc/CMSSW_10_2_0_pre5/src/VHcc/1L> was used as the working directory.
+Started at Mon Nov 19 09:56:38 2018
+Results reported on Mon Nov 19 09:58:49 2018
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/afs/cern.ch/work/j/jblee/private/Hcc/CMSSW_10_2_0_pre5/src/VHcc/1L/BSub_logs/WlvHcc/v4/WminusH_HToCC_WToLNu_M125_13TeV_powheg_pythia8/job_lmastrol-NanoProd_v4-2fc0529a080_2.sh
+------------------------------------------------------------
+
+Exited with exit code 255.
+
+Resource usage summary:
+
+    CPU time :                                   6.79 sec.
+    Max Memory :                                 38.20 MB
+    Average Memory :                             13.36 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   248 MB
+    Max Processes :                              10
+    Max Threads :                                10
+    Run time :                                   129 sec.
+    Turnaround time :                            134 sec.
+
+The output (if any) follows:
+
+@(#)CERN job starter $Date: 2010/06/23 14:22:16 $
+Working directory is </pool/lsf/jblee/207591441> on <b6368e9797.cern.ch>
+
+**** Following environment variables are going to be unset.
+       MALLOC_CONF
+Traceback (most recent call last):
+  File "Wlvhcc.py", line 6, in <module>
+    import nuSolutions as nu
+  File "/cvmfs/cms.cern.ch/slc6_amd64_gcc630/lcg/root/6.12.07-gnimlf3/lib/ROOT.py", line 318, in _importhook
+    return _orig_ihook( name, *args, **kwds )
+ImportError: No module named nuSolutions
+
+Job finished at Mon Nov 19 09:57:41 CET 2018 on node 
+ under linux version Scientific Linux CERN SLC release 6.10 (Carbon)
+
+CERN statistics: This process used approximately : 0:00:08 KSI2K hours (8 KSI2K seconds)
+                 This process corresponds to     : 0:00:33 HS06  hours (33 HS06  seconds)

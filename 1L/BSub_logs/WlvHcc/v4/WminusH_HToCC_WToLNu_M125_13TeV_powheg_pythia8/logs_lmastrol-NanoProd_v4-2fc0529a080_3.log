@@ -1,0 +1,53 @@
+Sender: LSF System <lsfadmin@b62191fe13.cern.ch>
+Subject: Job 207591444: </afs/cern.ch/work/j/jblee/private/Hcc/CMSSW_10_2_0_pre5/src/VHcc/1L/BSub_logs/WlvHcc/v4/WminusH_HToCC_WToLNu_M125_13TeV_powheg_pythia8/job_lmastrol-NanoProd_v4-2fc0529a080_3.sh> in cluster <batch> Exited
+
+Job </afs/cern.ch/work/j/jblee/private/Hcc/CMSSW_10_2_0_pre5/src/VHcc/1L/BSub_logs/WlvHcc/v4/WminusH_HToCC_WToLNu_M125_13TeV_powheg_pythia8/job_lmastrol-NanoProd_v4-2fc0529a080_3.sh> was submitted from host <lxplus054.cern.ch> by user <jblee> in cluster <batch>.
+Job was executed on host(s) <b62191fe13.cern.ch>, in queue <8nh>, as user <jblee> in cluster <batch>.
+</afs/cern.ch/user/j/jblee> was used as the home directory.
+</afs/cern.ch/work/j/jblee/private/Hcc/CMSSW_10_2_0_pre5/src/VHcc/1L> was used as the working directory.
+Started at Mon Nov 19 09:56:42 2018
+Results reported on Mon Nov 19 10:04:29 2018
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/afs/cern.ch/work/j/jblee/private/Hcc/CMSSW_10_2_0_pre5/src/VHcc/1L/BSub_logs/WlvHcc/v4/WminusH_HToCC_WToLNu_M125_13TeV_powheg_pythia8/job_lmastrol-NanoProd_v4-2fc0529a080_3.sh
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 255.
+
+Resource usage summary:
+
+    CPU time :                                   5.18 sec.
+    Max Memory :                                 218.92 MB
+    Average Memory :                             84.14 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   893 MB
+    Max Processes :                              11
+    Max Threads :                                13
+    Run time :                                   463 sec.
+    Turnaround time :                            473 sec.
+
+The output (if any) follows:
+
+@(#)CERN job starter $Date: 2010/06/23 14:22:16 $
+Working directory is </pool/lsf/jblee/207591444> on <b62191fe13.cern.ch>
+
+**** Following environment variables are going to be unset.
+       MALLOC_CONF
+##########################################################################################
+start_time :  Mon Nov 19 10:03:34 2018
+processing on :  /store/user/lmastrol/VHcc_2016V4_Aug18/WminusH_HToCC_WToLNu_M125_13TeV_powheg_pythia8/lmastrol-NanoProd_v4-2fc0529a080/180802_104152/0000/tree_3.root
+Traceback (most recent call last):
+  File "Wlvhcc.py", line 34, in <module>
+    oFile = TFile('/eos/cms/store/user/jblee/Hcc/WlvHcc/'+version+'/'+channel+'/tree_'+label+'.root','RECREATE')
+KeyboardInterrupt
+
+Job finished at Mon Nov 19 10:04:24 CET 2018 on node 
+ under linux version Scientific Linux CERN SLC release 6.10 (Carbon)
+
+CERN statistics: This process used approximately : 0:00:09 KSI2K hours (9 KSI2K seconds)
+                 This process corresponds to     : 0:00:36 HS06  hours (36 HS06  seconds)
