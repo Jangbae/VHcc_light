@@ -1,0 +1,1 @@
+json=aux/Tight27AfterIDISO_out.json       name=Tight27AfterIDISO       binning=eta_pt_ratio branches=Electron_pt,Electron_eta branchname=SF_SingleElTrigger    length=nElectron

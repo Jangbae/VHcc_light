@@ -1,0 +1,4 @@
+json=aux/Tight27AfterIDISO_out.json       name=Tight27AfterIDISO       binning=eta_pt_ratio branches=Electron_pt,Electron_eta branchname=SF_SingleElTrigger    length=nElectron
+json=aux/EIDISO_WH_out.json               name=EIDISO_WH               binning=eta_pt_ratio branches=Electron_pt,Electron_eta branchname=SF_SingleElIdIso      length=nElectron
+json=aux/ScaleFactor_etracker_80x.json    name=ScaleFactor_tracker_80x binning=eta_pt_ratio branches=Electron_pt,Electron_eta branchname=SF_egammaEffi_tracker length=nElectron
+json=aux/failingVeto_out.json             name=failingVeto_WH          binning=eta_pt_ratio branches=Electron_pt,Electron_eta branchname=SF_EleVeto            length=nElectron
