@@ -1,4 +1,5 @@
 import os, sys, glob
+import Wlvhcc_cfg as configurations
 import itertools
 
 
@@ -7,79 +8,14 @@ os.system("cp /tmp/x509up_u37238 /afs/cern.ch/user/j/jblee/")
 
 dic_sample = {}
 
-
-
-sampleList_WlvHcc = [
-####### SIGNAL for WHcc #######
-'WminusH_HToBB_WToLNu_M125_13TeV_powheg_herwigpp',
-'WminusH_HToBB_WToLNu_M125_13TeV_powheg_pythia8',
-'WminusH_HToCC_WToLNu_M125_13TeV_powheg_pythia8',
-
-'WplusH_HToBB_WToLNu_M125_13TeV_powheg_herwigpp',
-'WplusH_HToBB_WToLNu_M125_13TeV_powheg_pythia8',
-'WplusH_HToCC_WToLNu_M125_13TeV_powheg_pythia8',
-
-
-####### BKG for WHcc #######
-'ST_s-channel_4f_InclusiveDecays_13TeV-amcatnlo-pythia8',
-'ST_t-channel_antitop_4f_inclusiveDecays_TuneCUETP8M2T4_13TeV-powhegV2-madspin',
-'ST_t-channel_top_4f_inclusiveDecays_13TeV-powhegV2-madspin-pythia8_TuneCUETP8M1',
-'ST_tW_antitop_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M2T4',
-'ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1',
-
-'TT_TuneCUETP8M2T4_13TeV-powheg-pythia8',
-
-'QCD_HT1000to1500_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
-'QCD_HT100to200_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
-'QCD_HT1500to2000_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
-'QCD_HT2000toInf_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
-'QCD_HT200to300_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
-'QCD_HT300to500_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
-'QCD_HT500to700_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
-'QCD_HT700to1000_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
-
-'WJetsToLNu_HT-100To200_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
-'WJetsToLNu_HT-1200To2500_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
-'WJetsToLNu_HT-200To400_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
-'WJetsToLNu_HT-2500ToInf_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
-'WJetsToLNu_HT-400To600_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
-'WJetsToLNu_HT-600To800_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
-'WJetsToLNu_HT-800To1200_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
-'WJetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
-
-
-'DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
-'DY1JetsToLL_M-10to50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
-'DY1JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
-'DY2JetsToLL_M-10to50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
-'DY2JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
-'DY3JetsToLL_M-10to50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
-'DY3JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
-'DY4JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8',
-
-
-'WW_TuneCUETP8M1_13TeV-pythia8',
-'WZ_TuneCUETP8M1_13TeV-pythia8',
-
-###### DATA for WHcc #######
-'SingleElectron',
-'SingleMuon',
-
-]
-
-
-os.system("cp /tmp/x509up_u37238 /afs/cern.ch/user/j/jblee/")
-runDir=os.getcwd()
-queue = '8nh'
-version = 'v4'
-
-nlepton = 'WlvHcc'
-if 'WlvHcc' in nlepton:
-    sampleList = sampleList_WlvHcc
-elif 'ZllHcc' in nlepton:
-    sampleList = sampleList_ZllHcc
-elif 'ZvvHcc' in nlepton:
-    sampleList = sampleList_ZvvHcc
+nlepton = configurations.nlepton
+sampleList = configurations.sample_List
+dir_sampleList = configurations.dir_sampleList
+script = configurations.script
+runDir = configurations.runDir
+queue = configurations.queue
+version = configurations.version
+outputPath = configurations.outputPath
 
 print "################## Check if there is error in log ######################"
 for s in sampleList:
@@ -119,9 +55,9 @@ for s in sampleList:
 #                 os.system("rm /eos/cms/store/user/jblee/Hcc/"+nlepton+"/"+version+"/"+s+"/tree_"+label+".root")
 #                 os.system("bsub -q "+queue+" -o "+runDir+"/"+f+" "+runDir+"/"+f.split("logs_")[0]+bashScript )
     print int(Nevent)
-sys.exit()
+# sys.exit()
 ##### Check if there is missing log #####
-sampleListDir = 'sampleList_WlvHcc'    
+
 print "################## Check if there is missing log ######################"
 for s in sampleList:
     logList = []
@@ -130,7 +66,7 @@ for s in sampleList:
     fileList = glob.glob("BSub_logs/"+nlepton+"/"+version+"/"+s+"/*.log")
     for log in fileList:
         logList.append(int(log.split('_')[-1].split('.log')[0]))
-    pathInput = glob.glob(sampleListDir+"/Samples_"+s+"_fPath*.txt")
+    pathInput = glob.glob(dir_sampleList+"/Samples_"+s+"_fPath*.txt")
     for sample in pathInput:
         for line in open(sample).readlines(): 
             sampleL.append(int(line.split("tree_")[-1].split('.root')[0]))
@@ -151,7 +87,7 @@ for s in sampleList:
     logList = []
     ntupleL = []
     print s
-    ntupleList = glob.glob("/eos/cms/store/user/jblee/Hcc/"+nlepton+"/"+version+"/"+s+"/*.root")
+    ntupleList = glob.glob(outputPath+nlepton+"/"+version+"/"+s+"/*.root")
     fileList = glob.glob("BSub_logs/"+nlepton+"/"+version+"/"+s+"/*.log")
     for ntuple in ntupleList:
 #         print ntuple

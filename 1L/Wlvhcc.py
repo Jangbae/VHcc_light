@@ -1,6 +1,7 @@
 from ROOT import *
 from array import array
 
+import Wlvhcc_cfg as configurations
 import glob, sys, time
 import numpy as np
 import nuSolutions as nu
@@ -31,7 +32,7 @@ number = fileName.split('/0000/')[1].split('.root')[0].split('_')[1]
 temp = fileName.split(channel+'/')[1].split("/0000/")[0]
 label = temp.split('/')[0]+"_"+number
 
-oFile = TFile('/eos/cms/store/user/jblee/Hcc/WlvHcc/'+version+'/'+channel+'/tree_'+label+'.root','RECREATE')
+oFile = TFile(configurations.outputPath+'WlvHcc/'+version+'/'+channel+'/tree_'+label+'.root','RECREATE')
 
 oFile.cd()
 outputTree = TTree("Events","Events")

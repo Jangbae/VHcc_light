@@ -1636,3 +1636,38 @@ Job finished at Mon Nov 19 11:19:00 CET 2018 on node
 
 CERN statistics: This process used approximately : 0:47:32 KSI2K hours (2852 KSI2K seconds)
                  This process corresponds to     : 3:05:23 HS06  hours (11123 HS06  seconds)
+Sender: LSF System <lsfadmin@b67a84545f.cern.ch>
+Subject: Job 213060368: </afs/cern.ch/work/j/jblee/private/Hcc/CMSSW_10_2_0_pre5/src/VHcc/1L/BSub_logs/WlvHcc/v4/WminusH_HToCC_WToLNu_M125_13TeV_powheg_pythia8/job_lmastrol-NanoProd_v4-2fc0529a080_1.sh> in cluster <batch> Exited
+
+Job </afs/cern.ch/work/j/jblee/private/Hcc/CMSSW_10_2_0_pre5/src/VHcc/1L/BSub_logs/WlvHcc/v4/WminusH_HToCC_WToLNu_M125_13TeV_powheg_pythia8/job_lmastrol-NanoProd_v4-2fc0529a080_1.sh> was submitted from host <lxplus128.cern.ch> by user <jblee> in cluster <batch>.
+Job was executed on host(s) <b67a84545f.cern.ch>, in queue <8nh>, as user <jblee> in cluster <batch>.
+</afs/cern.ch/user/j/jblee> was used as the home directory.
+</afs/cern.ch/work/j/jblee/private/Hcc/CMSSW_10_2_0_pre5/src/VHcc/1L> was used as the working directory.
+Started at Wed Jan 16 11:18:45 2019
+Results reported on Wed Jan 16 11:18:55 2019
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/afs/cern.ch/work/j/jblee/private/Hcc/CMSSW_10_2_0_pre5/src/VHcc/1L/BSub_logs/WlvHcc/v4/WminusH_HToCC_WToLNu_M125_13TeV_powheg_pythia8/job_lmastrol-NanoProd_v4-2fc0529a080_1.sh
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 130.
+
+Resource usage summary:
+
+    CPU time :                                   0.47 sec.
+    Max Memory :                                 2.99 MB
+    Average Memory :                             2.99 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   60 MB
+    Max Processes :                              1
+    Max Threads :                                1
+    Run time :                                   8 sec.
+    Turnaround time :                            11 sec.
+
+The output (if any) follows:
+
